@@ -3,6 +3,7 @@ package com.notynote.gycalculator;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -13,6 +14,7 @@ public class GyCalculator extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(GyCalculator.class.getResource("main-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 405, 920);
         stage.setTitle("GyCalculator by NotyNote");
+        stage.getIcons().add(new Image(this.getClass().getResourceAsStream("GyCalculator.png")));
         stage.setScene(scene);
         stage.show();
     }
