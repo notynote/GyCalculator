@@ -246,6 +246,10 @@ public class MainController implements Initializable {
                 break;
         }
 
+        if (sum > 10) {
+            sum = 10;
+        }
+
         if (sum < 0) {
             sum = 0;
         }
