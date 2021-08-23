@@ -1,0 +1,29 @@
+.button-add {
+    -fx-background-color: #EAFFD0;
+    -fx-border-color: #B5B5B5;
+}
+
+.button-add:hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, #00B8A9;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: #F6416C;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+
+.button-take {
+    -fx-background-color: #F38181;
+    -fx-border-color: #B5B5B5;
+}
+
+.button-take:hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, #F6416C;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: #000;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}

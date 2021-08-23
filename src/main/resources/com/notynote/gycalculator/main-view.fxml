@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.notynote.gycalculator.MainController">
+<AnchorPane fx:id="pane" prefHeight="720.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.notynote.gycalculator.MainController">
    <children>
       <VBox prefHeight="920.0" prefWidth="405.0">
          <children>
@@ -110,17 +110,22 @@
             </HBox>
             <HBox alignment="CENTER" layoutX="10.0" layoutY="460.0" prefHeight="100.0" prefWidth="405.0">
                <children>
-                  <Button fx:id="plusOne" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="+1">
+                  <Button fx:id="plusOne" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="button-add" stylesheets="@button.css" text="+1">
                      <font>
                         <Font size="22.0" />
                      </font>
                   </Button>
-                  <Button fx:id="plusTwo" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="+2">
+                  <Button fx:id="plusTwo" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="button-add" stylesheets="@button.css" text="+2">
                      <font>
                         <Font size="22.0" />
                      </font>
                   </Button>
-                  <Button fx:id="zero" mnemonicParsing="false" prefHeight="100.0" prefWidth="205.0" text="0">
+                  <Button fx:id="zero" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="equal" mnemonicParsing="false" prefHeight="100.0" prefWidth="105.0" text="=">
                      <font>
                         <Font size="22.0" />
                      </font>
@@ -132,17 +137,17 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="minusOne" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="-1">
+                  <Button fx:id="minusOne" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="button-take" stylesheets="@button.css" text="-1">
                      <font>
                         <Font size="22.0" />
                      </font>
                   </Button>
-                  <Button fx:id="minusTwo" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="-2">
+                  <Button fx:id="minusTwo" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="button-take" stylesheets="@button.css" text="-2">
                      <font>
                         <Font size="22.0" />
                      </font>
                   </Button>
-                  <Button fx:id="equal" mnemonicParsing="false" prefHeight="100.0" prefWidth="205.0" text="=">
+                  <Button fx:id="simpleMode" mnemonicParsing="false" onAction="#SwitchMode" prefHeight="100.0" prefWidth="205.0" text="Simple Mode">
                      <font>
                         <Font size="22.0" />
                      </font>

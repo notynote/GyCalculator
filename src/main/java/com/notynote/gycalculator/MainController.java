@@ -1,16 +1,24 @@
 package com.notynote.gycalculator;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
 
+    @FXML
+    Pane pane;
+    @FXML
+    Button simpleMode;
     @FXML
     Text sumText;
     @FXML
@@ -62,7 +70,7 @@ public class MainController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        sum = 2;
+        sum = 3;
         this.firstRound = true;
 
         currentSum.setText("");
@@ -89,6 +97,12 @@ public class MainController implements Initializable {
 
         equal.setOnAction(actionEvent -> EqualPress(equal));
 
+    }
+
+    @FXML
+    public void SwitchMode() throws IOException {
+        AnchorPane simpleMode = FXMLLoader.load(getClass().getResource("simple-view.fxml"));
+        pane.getChildren().setAll(simpleMode);
     }
 
     public void EqualPress(Button button) {
@@ -220,7 +234,7 @@ public class MainController implements Initializable {
     }
 
     public void ClearButton() {
-        sum = 2;
+        sum = 3;
         this.firstRound = true;
         this.calculatingNumber.clear();
         this.calculatingText.clear();
