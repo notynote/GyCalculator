@@ -53,7 +53,7 @@
                         <Font size="22.0" />
                      </font>
                   </Button>
-                  <Button fx:id="clear" mnemonicParsing="false" prefHeight="100.0" prefWidth="105.0" text="CLEAR">
+                  <Button fx:id="clear" mnemonicParsing="false" onAction="#ClearButton" prefHeight="100.0" prefWidth="105.0" text="CLEAR">
                      <font>
                         <Font size="22.0" />
                      </font>
@@ -120,12 +120,12 @@
                         <Font size="22.0" />
                      </font>
                   </Button>
-                  <Button fx:id="zero" mnemonicParsing="false" prefHeight="100.0" prefWidth="105.0" text="0">
+                  <Button fx:id="zero" mnemonicParsing="false" prefHeight="100.0" prefWidth="205.0" text="0">
                      <font>
                         <Font size="22.0" />
                      </font>
                      <HBox.margin>
-                        <Insets left="100.0" />
+                        <Insets />
                      </HBox.margin>
                   </Button>
                </children>
@@ -142,12 +142,12 @@
                         <Font size="22.0" />
                      </font>
                   </Button>
-                  <Button fx:id="equal" mnemonicParsing="false" prefHeight="100.0" prefWidth="105.0" text="=">
+                  <Button fx:id="equal" mnemonicParsing="false" prefHeight="100.0" prefWidth="205.0" text="=">
                      <font>
                         <Font size="22.0" />
                      </font>
                      <HBox.margin>
-                        <Insets left="100.0" />
+                        <Insets />
                      </HBox.margin>
                   </Button>
                </children>

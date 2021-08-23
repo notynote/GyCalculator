@@ -84,7 +84,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.notynote.gycalculator/com.notynote.gycalculator.HelloApplication</mainClass>
+                            <mainClass>com.notynote.gycalculator/com.notynote.gycalculator.GyCalculator</mainClass>
                         </configuration>
                     </execution>
                 </executions>
